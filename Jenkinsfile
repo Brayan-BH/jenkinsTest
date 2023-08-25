@@ -1,11 +1,11 @@
+// Declarative //
 pipeline {
-    agent any
+    agent {
+        dockerfile true
+    }
 
     stages {
         stage('Build') {
-            agent {
-                dockerfile true
-            }
             steps {
                 echo 'Building xD'
                 sh 'python --version'
