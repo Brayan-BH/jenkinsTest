@@ -11,6 +11,6 @@ WORKDIR /app
 
 COPY ./src/ /app/src
 
-RUN python /app/src/main.py
+#RUN python /app/src/main.py
 
 EXPOSE 4567
