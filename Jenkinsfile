@@ -1,12 +1,13 @@
 Revisar Documentacion
 // Declarative //
 pipeline {
-    agent {
-        dockerfile {
-            filename 'Dockerfile'
-            additionalBuildArgs '--network=host'
-        }
-    }
+    // agent {
+    //     dockerfile {
+    //         filename 'Dockerfile'
+    //         additionalBuildArgs '--network=host'
+    //     }
+    // }
+    agent any
 
     stages {
         stage('Build') {
