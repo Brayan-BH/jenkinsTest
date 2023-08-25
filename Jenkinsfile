@@ -1,16 +1,14 @@
-// Declarative //
 pipeline {
-    agent {
-        dockerfile true
-        }
-    }
     agent any
 
     stages {
         stage('Build') {
+            agent {
+                dockerfile true
+            }
             steps {
                 echo 'Building xD'
-                sh 'python --v .ersion'
+                sh 'python --version'
             }
         }
         stage('Test') {
