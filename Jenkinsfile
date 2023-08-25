@@ -1,9 +1,7 @@
 // Declarative //
 pipeline {
     agent {
-        dockerfile {
-            filename 'Dockerfile'
-            additionalBuildArgs '--network=host'
+        dockerfile true
         }
     }
     agent any
