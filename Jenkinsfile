@@ -1,4 +1,3 @@
-Revisar Documentacion
 // Declarative //
 pipeline {
     // agent {
@@ -13,7 +12,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building xD'
-                sh 'python --version'
+                // sh 'python --version'
             }
         }
         stage('Test') {
